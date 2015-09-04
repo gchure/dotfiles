@@ -5,10 +5,7 @@
  *
 */
 
-// This is my configuration for Phoenix <https://github.com/kasper/phoenix>,
-// a super-lightweight OS X window manager that can be configured and
-// scripted through Javascript.
-
+//Define key variables
 var mNone = [],
   mCmd = ['alt'],
   mShift = ['shift'],
