@@ -52,6 +52,9 @@ alias muttrc='vim ~/.muttrc'
 alias phoenix='vim ~/.phoenix.js'
 
 
+#For switching python distributions and versions.
+alias py27='source activate py27' 
+
 #Set PATH variables.
 export MANPATH=/usr/local/man:$MANPATH
 export PATH="/Users/gchure:/Users/gchure/anaconda/bin:$PATH"
