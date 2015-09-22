@@ -59,7 +59,7 @@ alias py27='source activate py27'
 export MANPATH=/usr/local/man:$MANPATH
 export PATH="/Users/gchure:/Users/gchure/anaconda/bin:$PATH"
 export PATH=$PATH:usr/local/bin/:usr/bin:bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:Users/gchure:Users/gchure/anaconda/envs/py3/bin:$PATH
-export PYTHONPATH=:.:/Users/gchure/anaconda/bin:/Users/gchure/python_code:/Applications/Micro-Manager1.4:$PYTHONPATH #:/usr/bin:/usr/local/bin:$
+export PYTHONPATH=:.:/Users/gchure/anaconda/bin:/Users/gchure/python_code:/Users/gchure/lab/PhillipsLab201401-XXX/lab_code/hgt_analysis:Applications/Micro-Manager1.4:$PYTHONPATH #:/usr/bin:/usr/local/bin:$
 export EDITOR=/usr/local/bin/vim
 
 

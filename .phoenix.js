@@ -62,6 +62,13 @@ bind( 'c', mNone, cycleCalls(
   ]
 ));
 
+// Center rectangle in window. 
+bind( 'c', mCtrl, cycleCalls(
+   toGrid,
+   [
+   [0.3, 0.5, 0.5, 0.95],
+   ]
+));
 // The cursor keys together with cmd make any window occupy any
 // half of the screen.
 bind( 'l', mCmd, cycleCalls(
