@@ -57,6 +57,7 @@ bind( 'space', mNone, function() {
 bind( 'c', mNone, cycleCalls(
   toGrid,
   [
+    [0.30, 0.025, 0.40, 0.95],
     [0.22, 0.025, 0.56, 0.95],
     [0.1, 0, 0.8, 1]
   ]
