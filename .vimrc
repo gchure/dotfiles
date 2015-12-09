@@ -93,7 +93,6 @@ let g:syntastic_check_on_wq  = 0
 
 
 let base16colorspace=256
- "Colors and other custom configuration
 colorscheme base16-ashes
 "lucius
 set background=dark "Light schemes are for chumps.
@@ -145,6 +144,8 @@ autocmd Bufwritepre,filewritepre *.py execute "normal ma"
 "Remapping keys to my liking. 
 imap jk <Esc> 
 imap //.  ../../../
+map w; :w <CR>
+map z; :wq <CR>
 map cdl cd /Users/gchure/Desktop/Lab/PhillipsLab201401-XXX/Lab_Notebook/source/2014/
 map zx :w !detex \| wc -w<CR>
 map cdl :chdir /Users/gchure/Desktop/Lab/PhillipsLab201401-XXX/Lab_Notebook/source/ 
@@ -155,7 +156,7 @@ nnoremap <space>c \ll
 nnoremap <space>ga  :Git add %:p<CR><CR>
 nnoremap <space>gc  :Git commit -m "Autocommit from Vim." <CR><CR>
 nnoremap git :Git add %:p \| :Git commit -m "Autocommit from Vim" \| :Git push origin master<CR><CR>
-nnoremap ;w :w <CR> \ll 
+
 nnoremap <C-W> <C-W><C-W>
 nnoremap <D-X> <C-D>
 nnoremap <D-Y> <C-U>
@@ -215,14 +216,4 @@ inoremap <C-U> <C-G>u<C-U>
 
 
 
-""""SHIT I DON'T LIKE BUT AM TOO AFRAID TO DELETE"""""""""""""""""""""""""""
-"Set the tex conceal options. Allows display of LaTeX characters as unicode.
-"I decided this sucks but I keep it here anyway incase I want it.
-"set cole=2 " conceal level
-"set cocu=n "only shows actual LaTeX when in insert mode. 
-"Conceal in tex file: 'admgs', a = accents, d = delimiters, m = math symbols, g
-"= Greek, s = super/sub scripts:
-"let g:tex_conceal="admgs"
-"Set the colors so they blend with molokai. 
-"hi Conceal  guibg=NONE guifg=NONE
 
