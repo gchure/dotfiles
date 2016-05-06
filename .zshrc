@@ -19,8 +19,11 @@ alias server="python -m http.server 8888 &"
 #Quick movement. 
 alias lab="cd ~/Lab/PhillipsLab201401-XXX/"
 alias grad="cd ~/School/"
-alias notebook="cd ~/Lab/PhillipsLab201401-XXX/Lab_Notebook/source/"
+alias notebook="cd ~/Lab/PhillipsLab201401-XXX/notebook/"
 alias desk="cd ~/Desktop/"
+alias copypath="pwd|pbcopy"
+alias jpn="jupyter notebook"
+
 
 #Connect and move to frequently accessed servers.
 alias mount-hermes="sh ~/shell_scripts/mount_hermes"
@@ -34,14 +37,19 @@ alias spicybeef="sh ~/shell_scripts/spicybeef_sftp"
 alias spicybeef-root="sh ~/shell_scripts/spicybeef_root"
 alias spicybeef-ssh="sh ~/shell_scripts/spicybeef_ssh"
 alias spicybeef-scp="sh ~/shell_scripts/spicybeef_scp"
+alias spicybeef-retrieval="sh ~/shell_scripts/spicybeef_retrieval"
+alias ssh-website="sh ~/shell_scripts/ssh_website"
+alias scp-website="sh ~/shell_scripts/scp_website"
+alias notes="sh ./notes.sh"
 
 #Custom git aliases
 alias gpom="git push origin master"
+alias gpgh="git push origin gh-pages"
 alias gcom="git commit -m "
 
 #Alias for opening frequently used Applications
 alias ran="ranger"
-alias matlab="/Applications/MATLAB_R2014b.app/bin/matlab -nodesktop" #Fuck the GUI.
+alias matlab="/Applications/MATLAB_R2015b.app/bin/matlab -nodesktop" #Fuck the GUI.
 alias fiji="open /Applications/Fiji.app"
 alias bean="java bsh.Interpreter"
 alias chat="profanity -a griffinchure@gmail.com"
@@ -61,7 +69,7 @@ alias py27='source activate py27'
 export MANPATH=/usr/local/man:$MANPATH
 export PATH="/Users/gchure:/Users/gchure/anaconda/bin:$PATH"
 export PATH=$PATH:/Users/gchure:/Users/gchure/anaconda/bin:usr/local/bin/:usr/bin:bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:Users/gchure:Users/gchure/anaconda/envs/py3/bin:$PATH
-export PYTHONPATH=:.:/Users/gchure/anaconda/bin:/Users/gchure/python_code:/Users/gchure/lab/PhillipsLab201401-XXX/lab_code/hgt_analysis:Applications/Micro-Manager1.4:$PYTHONPATH #:/usr/bin:/usr/local/bin:$
+export PYTHONPATH=:.:/Users/gchure/anaconda/bin:/Users/gchure/python_code:/Users/gchure/lab/PhillipsLab201401-XXX/lab_code/hgt_analysis:/Users/gchure/lab/PhillipsLab201401-XXX/lab_code/image_processing:Applications/Micro-Manager1.4:$PYTHONPATH #:/usr/bin:/usr/local/bin:$
 export EDITOR=/usr/local/bin/nvim
 
 

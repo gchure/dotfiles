@@ -16,11 +16,11 @@
 				      
 "Plugin loading via vim-plug
 call plug#begin('~/.config/nvim/plugged') 
-
 Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/LaTeX-BoX'
 Plug 'tpope/vim-fugitive'
 Plug 'kassio/neoterm'
@@ -32,6 +32,9 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jpalardy/vim-slime'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'lervag/vimtex'
 "Plug 'mhinz/vim-startify'
 "Plug 'davidhalter/jedi-vim'
 call plug#end()
@@ -39,10 +42,14 @@ call plug#end()
 "Colorscheme information 
 let base16colorspace=256
 set background=dark
-colorscheme base16-ocean
-
+colorscheme  base16-ocean
+hi normal ctermbg=none
 "Turn on line numbers by default. 
 set number
+set cursorline
+hi  LineNr ctermbg=none
+hi cursorline ctermbg=none
+hi cursorlinenr ctermfg=red ctermbg=none
 
 "Set search preferences 
 set incsearch 
@@ -50,6 +57,8 @@ set ignorecase
 set smartcase 
 set hlsearch
 
+"Make scrolling smoother. 
+set lazyredraw
 
 "Force 79 char line wrapping. 
 set tw=79
@@ -77,7 +86,7 @@ nnoremap sh :sp<CR>
 
 "Vim-tmux-navigator bindings. 
 let g:tmux_navigator_no_mappings = 1
-let g:tmux_navigotor_save_on_switch = 1
+let g:tmux_navigator_save_on_switch = 1
 nnoremap <silent> <C-G> :TmuxNavigateLeft<cr>
 nnoremap <silent> <C-J> :TmuxNavigateDown<cr>
 nnoremap <silent> <C-K> :TmuxNavigateUp<cr>
@@ -115,10 +124,13 @@ map <C-n> :NERDTreeToggle<CR>
 
 "GoYo configuration.
 nnoremap <C-E> :Goyo <CR>
-
+let g:goyo_width=95
+let g:goyo_height=85
 "Flake8 checking (Pyflakes with PEP8)
 autocmd FileType python map <buffer> ,fl :call Flake8()<CR>
 
+"Fix markdown syntax highlighting weirdness. 
+au BufNewFile,BufFilePRe,BufRead *.md set filetype=markdown
 "Allow copy/paste from system clipboard. 
 set clipboard^=unnamed
 
